@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <base href="../"> -->
+    <style>
+        body {
+            background-color: #f0f0f0;
+            /* background-image: url(''); */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 90%;
+            height: 100vh;
+            /* border: 1px solid; */
+            background-size: 100% 100%;
+            box-shadow: 10px 10px 5px #888888;
+            animation: bg-slider 10s linear infinite;
+        }
+
+        @keyframes bg-slider {
+            0% {
+                background-image: url('images-folder/image-1.jpg');
+            }
+
+            25% {
+                background-image: url('images-folder/image-2.jpg');
+            }
+
+            50% {
+                background-image: url('images-folder/image-3.jpg');
+            }
+
+            75% {
+                background-image: url("images-folder/image-4.jpg");
+            }
+
+            100% {
+                background-image: url("images-folder/image-5.avif");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pavan">
+        <div class="container">
+            <h1>Background Slider</h1>
+        </div>
+    </div>
+</body>
+
+</html>
